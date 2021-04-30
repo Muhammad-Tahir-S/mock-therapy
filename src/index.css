@@ -27,27 +27,50 @@ html::-webkit-scrollbar-thumb:active {
 
 /* START CUSTOM CLASSES */ 
 .h1-mod {
-  font: 400 60px/120% 'Playfair Display', serif;
-  color: #64BAAA
+  font: 400 42px/120% 'Playfair Display', serif;
+  color: #17a2b8
 }
 
 @media(max-width: 768px) {
   .h1-mod {
-    font: 400 50px/120% 'Playfair Display', serif
+    font: 400 35px/120% 'Playfair Display', serif
   }
 }
 
+.h3-mod {
+  font: 700 18px/120% 'Fauna One', Georgia, serif;
+  color: #4143bb;
+
+}
+
 .p-mod {
-  font: 500 16px/140% 'Fauna One', Georgia, serif;
+  font: 500 15px/120% 'Fauna One', Georgia, serif;
   max-width: 300px;
   /* margin: top bottom left right */
   /* color: #000; */
+}
+
+.error {
+  border: 2px solid #FF6565 !important;
+
+}
+
+.mt-80px {
+  margin-top: 80px;
+
+}
+
+.error-message {
+  color: #FF6565;
+  height: 1em;
+  position: absolute;
+  font-size: .8em;
 }
 /* END CUSTOM CLASSES */ 
 
 
 /* START NAVBAR SECTION */
-nav {
+nav.nav1 {
   background-color: white ;
   padding-bottom: 50px;
   /* border-bottom-right-radius: 3px;  
@@ -55,37 +78,17 @@ nav {
   box-shadow: 0 2px 4px 0 rgb(24 99 85);
 }
 
-.dropdown-menu{
-  background-color: white !important;
-  border-color: #17a2b8 !important;
-  margin-top: 5px !important;
+nav.nav2 {
+  z-index: 10
   
 }
 
-.dropdown-menu:hover{
-  background-color: white !important;
-  border: 0.5px solid #17a2b8 ;
-
+.tog-btn {
+  margin-top: -10px !important;
 }
 
-.dropdown-item{
-  background-color: white !important;
-}
-
-.dropdown-item a:hover{
-  background-color: #c0d6da !important;
-
-}
-
-.dropdown-item:hover{
-  background-color: #c0d6da !important;
-}
-
-.d-item{
-  border-bottom: 0.4px solid #17a2b8;
-}
-.d-item:hover{
-  border-bottom: 0.4px solid #17a2b8;
+.dropdown-toggle:hover {
+  color: #000 !important;
 }
 /* END NAVBAR SECTION */
 
@@ -106,31 +109,31 @@ nav {
 /* END HERO SECTION */ 
 
 
-/* .how-it-works{
+/* START HOW IT WORKS SECTION */ 
 
-} */
-
-.sign-up-client {
-  margin-top: 80px;
+.how-it-works {
+  margin-top: 60px;
 }
 
-.sign-up-therapist {
-  margin-top: 80px;
+u{
+  
 }
 
-.get-started{
-  margin-top: 80px;
+.hiw-con {
+  max-width: 240px !important;
+  width: 100% !important;
 }
 
-.about {
-  margin-top: 80px;
-
+.card {
+  max-width: 270px !important;
+  width: 100% !important;
+  font-family: 'Fauna One', Georgia, serif;
+  text-align: center;
+  border: none !important;
 }
 
-.error {
-  margin-top: 80px;
+/* START HOW IT WORKS SECTION */ 
 
-}
 
 .scroll-bg{
   width: 30px;

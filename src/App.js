@@ -2,25 +2,30 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import SignUpClient from "./components/SignUpClient";
-import SignUpTherapist from "./components/SignUpTherapist";
+import SignUp from "./components/SignUp";
+import ResetPassword from "./components/ResetPassword";
 import ErrorPage from "./components/ErrorPage";
-import LogInClient from './components/LogInClient'
-import LogInTherapist from './components/LogInTherapist'
+import LogIn from './components/LogIn'
+import ResendEmail from './components/ResendEmail'
+import ForgotPassword from './components/ForgotPassword'
+import  { BreakpointProvider } from 'react-socks';
 
 function App() {
   return (
+    <BreakpointProvider>
     <div className="App">
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/signupClient" component={SignUpClient} />
-        <Route path="/signupTherapist" component={SignUpTherapist} />
-        <Route path="/loginClient" component={LogInClient} />
-        <Route path="/loginTherapist" component={LogInTherapist} />
+        <Route path="/signup" component={SignUp} />
+        <Route exact path="/resetPassword/:id/:token" component={ResetPassword} />
+        <Route path="/login" component={LogIn} />
+        <Route path="/resendEmail" component={ResendEmail} />
+        <Route path="/forgotPassword" component={ForgotPassword} />
         <Route component={ErrorPage} />
       </Switch>
     </div>
+    </BreakpointProvider>
   );
 }
 
